@@ -8,7 +8,10 @@ function enterClicked() {
   const streetNumber = document.getElementById("street-number").value
   const streetName = document.getElementById("street-name").value
 
+  // process
+  const address = streetNumber + streetName 
+
+
   // output
-  document.getElementById("address").innerHTML =
-    "Your info is: " + streetNumber + ", " + streetName + "."
+  document.getElementById("address").innerHTML = "Your address is: " + streetNumber + ", " + streetName + "."
 }

@@ -1,84 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Address Website, with JavaScript" />
-    <meta name="keywords" content="mths, ics2o" />
-    <meta name="author" content="Mr. Coxall" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="dog-apple-touch-icon.jpg" />
-    <link rel="icon" type="image/png" sizes="32x32" href="fat dog 32x32.jpg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="fat dog 16x16.jpg" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.purple-deep_purple.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Address Website, with JavaScript</title>
-  </head>
-  <body>
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="./js/script.js"></script>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <main class="mdl-layout__content">
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Address Website, with JavaScript" />
+  <meta name="keywords" content="mths, ics2o" />
+  <meta name="author" content="Olivia B-R" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="dog-apple-touch-icon.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="fat dog 32x32.jpg" />
+  <link rel="icon" type="image/png" sizes="16x16" href="fat dog 16x16.jpg" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-deep_purple.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Address Website, with JavaScript</title>
+</head>
+<body>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <main class="mdl-layout__content">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title"
-            >Address Website, with a JavaScript</span
-          >
+          <span class="mdl-layout-title">Address Website, with a JavaScript</span>
         </div>
-      <main class="mdl-layout__content"> </main>
-        <img src="./images/street.jpg" alt="img" />
-        <h3>Please enter the following:</h3>
-        <!-- Numerical Textfield -->
-        <form action="#">
-          <p>Street number</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="street-number"
-            />
-            <label class="mdl-textfield__label" for="Street-number"
-              >Street Number ...</label
-            >
-          </div>
-        </form>
-        <!-- Simple Textfield -->
-        <form action="text">
-          <p>Street name</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              id="street-name"
-            />
-            <label class="mdl-textfield__label" for="Street-name"
-              >Street name ...</label
-            >
-          </div>
-        </form>
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="enterClicked()"
-        >
-          Enter
-        </button>
-        <br />
-        <br />
-        <br />
-        <div id="user-info">
-          <div id="address"></div>
-        </div>
-      </main>
-    </div>
     </header>
-  </body>
+    <main class="mdl-layout__content">
+      <img src="./images/street.jpg" alt="img" />
+      <h3>Please enter the following:</h3>
+      <!-- Numerical Textfield -->
+      <form action="#">
+        <p>Street number</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="street-number" />
+          <label class="mdl-textfield__label" for="street-number">Street Number ...</label>
+        </div>
+      </form>
+      <!-- Numerical Textfield -->
+      <form action="text">
+        <p>Street name</p>
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="street-name" />
+          <label class="mdl-textfield__label" for="street-name">Street name ...</label>
+        </div>
+      </form>
+      <!-- Raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+        onclick="enterClicked()">
+        Enter
+      </button>
+      <br />
+      <br />
+      <br />
+      <div id="user-info">
+        <div id="address"></div>
+      </div>
+    </main>
+  </div>
+</body>
 </html>
